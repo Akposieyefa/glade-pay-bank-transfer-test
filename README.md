@@ -3,7 +3,7 @@
 This package take cares of initialize glade pay bank tranfer flow, returns account details to make payment to.
 Verifies the glade pay bank transfer status, returns status of payment. Installation will be thorugh comoser once it is registerd in https://packagist.org/ After installation of this package:
 
-- Run the blow command
+- Run the below command
 - Composer install
 - Composer dump-autoload
 - Create a new .env and add your glade pay keys
