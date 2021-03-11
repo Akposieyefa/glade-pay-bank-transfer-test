@@ -1,0 +1,36 @@
+{
+    "name": "akposieyefa/glade-bank-transger",
+    "type": "library",
+    "description": "API to make bank transfer with Glade Payment Gateway",
+    "authors": [
+        {
+            "name": "Orutu Akposieyefa W",
+            "email": "orutu1@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Akposieyefa\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "files":["public/index.php"],
+        "psr-4": {
+            "Akposieyefa\\Test\\": "tests"
+        }
+    },
+    "require": {
+        "php": "~7.0",
+      "ext-curl": "*",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "8"
+    },
+    "scripts": {
+        "test": "phpunit",
+        "check-style": "phpcs src tests",
+        "fix-style": "phpcbf src tests"
+    }
+}
