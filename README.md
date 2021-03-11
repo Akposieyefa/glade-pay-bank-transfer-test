@@ -12,7 +12,7 @@ Verifies the glade pay bank transfer status, returns status of payment. Installa
 
 ```php
 $trax = new BankTransaction();
-$response = $trax ->amountCharged('1500')->customUserData(['email' => "orutu1@gmail.com","firstname"=>"Orutu", "lastname"=>"Akposieyefa"]) ->run(); 
+$response = $trax->amountCharged('1500')->customUserData(['email' => "orutu1@gmail.com","firstname" => "Orutu", "lastname" => "Akposieyefa"])->run(); 
 print_r($response);
 ```
 The above code is for initializing bank transfer and for returning the account details.
@@ -20,7 +20,7 @@ The above code is for initializing bank transfer and for returning the account d
 ## Verify Bank Transfer Payment
 
 ```php
-$verify= new VerifyTransaction('Glade2214920620210311O');
+$verify = new VerifyTransaction('Glade2214920620210311O');
 $response = $verify->run(); 
 print_r($response); 
 ```
